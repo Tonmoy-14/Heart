@@ -105,6 +105,23 @@
       scroll-snap-stop: always;
       padding: 20px;
     }
+ .container2 {
+      position: relative;
+      z-index: 3;
+      scroll-snap-type: y mandatory;
+      overflow-y: auto;
+    }
+
+    section2 {
+      min-height: 20vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
+      padding: 20px;
+    }
+
 
     .content {
       background: rgb(255, 255, 255, 0.0);
@@ -267,14 +284,14 @@
     <!-- Hearts will be added by JS -->
   </div>
 
-  <div class="container">
+  <div class="container2">
     
-    <section>
+    <section2>
       <div class="content">
         
         <p style="color: black; font-weight: bolder;">Every time I think of you, my heart fills with love and warmth that words can hardly express.</p>
       </div>
-    </section>
+    </section2>
   </div>
 
   <button class="music-control" id="musicToggle">🎵</button>
@@ -380,5 +397,6 @@
   </script>
 </body>
 </html>
+
 
 
